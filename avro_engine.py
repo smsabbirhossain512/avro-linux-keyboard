@@ -61,6 +61,16 @@ def parse_avro(text):
     sorted_keys = sorted(set(all_keys), key=len, reverse=True)
     
     while i < n:
+        if text[i:i+2] == '..':
+            res.append('.')
+            prev_type = 'other'
+            i += 2
+            continue
+        if text[i] == '.':
+            res.append('।')
+            prev_type = 'other'
+            i += 1
+            continue
         if text[i] in NUMBERS:
             res.append(NUMBERS[text[i]])
             prev_type = 'num'
