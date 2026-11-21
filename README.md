@@ -16,7 +16,8 @@ Linux (Ubuntu, Fedora, Debian, Linux Mint, Arch)-এর জন্য সম্�
 যেকোনো লিনাক্স ডিস্ট্রিবিউশনে (Ubuntu, Fedora, Mint, Debian, Arch) টার্মিনাল খুলে নিচের কমান্ডটি পেস্ট করে **Enter** চাপুন। এটি প্রয়োজনীয় ডিপেন্ডেন্সি, Rust এবং IBus অটোমেটিক সেটআপ করে নেবে:
 
 ```bash
-rm -rf /tmp/avro-linux-keyboard && git clone https://github.com /tmp/avro-linux-keyboard && cd /tmp/avro-linux-keyboard && chmod +x install.sh && ./install.sh
+rm -rf /tmp/avro-linux-keyboard && git clone https://github.com/smsabbirhossain512/avro-linux-keyboard.git /tmp/avro-linux-keyboard && cd /tmp/avro-linux-keyboard && chmod +x install.sh && ./install.sh
+
 ```
 
 ### পদ্ধতি ২: ZIP ডাউনলোড করে ম্যানুয়াল ইনস্টল
